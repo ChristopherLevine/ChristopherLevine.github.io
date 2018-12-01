@@ -1,0 +1,33 @@
+html {
+      background-image: url(something.png);
+    color: white;
+}
+header ul {
+    color: white;
+    background-color: #4d3531;
+    padding: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: -195px;
+    font-size: 20pt;
+    text-align: center;
+}
+a {
+    color: white;
+}
+p {
+    font-size: 15pt;
+}
+main img {
+    float: left;
+    margin-top: -80px
+}
+main section img {
+    float: right;
+    margin-top: -135px;
+}
+iframe {
+    margin-left: 16%;
+    margin-top: 9%
+}
