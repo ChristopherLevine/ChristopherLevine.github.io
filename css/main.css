@@ -39,6 +39,8 @@ a:active {
 p {
     font-size: 15pt;
     color: white;
+	background-color: #4d3531;
+	padding: 5px;
 }
 main img {
     float: left;
@@ -73,7 +75,7 @@ main aside img {
 main section p{
     position: absolute;
     left: 77%;
-    right: 17%;
+    right: 16%;
     top: 680px;
 }
 iframe {
@@ -87,7 +89,7 @@ iframe {
     grid-template-rows: auto auto auto;
     grid-column-gap: 90px;
 }
-#regular {
+#regularh, #regularp {
     grid-column-start: 1;
     grid-column-end: 2;
 }
@@ -178,7 +180,8 @@ input[type=submit]:hover {
 }
 footer p {
     font-size: 8pt;
-    margin-left: 45%
+    margin-left: 45%;
+	margin-right: 40%;
 }
 #twit {
     margin-left: 35%;
@@ -188,4 +191,10 @@ footer p {
 }
 #face {
     margin-left: 10%;
+}
+#hours {
+	position: absolute;
+	top: 570px;
+	left: 41.4%;
+	right: 40%;
 }
