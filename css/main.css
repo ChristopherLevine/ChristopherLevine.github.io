@@ -44,7 +44,7 @@ p {
 }
 main img {
     float: left;
-    margin-top: -80px;
+    margin-top: 700px;
 }
 main p{
     position: absolute;
@@ -197,4 +197,38 @@ footer p {
 	top: 570px;
 	left: 41.4%;
 	right: 40%;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: absolute;
+	top: -590px;
+	left: 36%;
+	padding: 0;
+	*zoom: 1;
+    z-index: 3;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.slideshow-container img {
+	max-width: 100%;
+	display: block;
+    z-index: 3;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
