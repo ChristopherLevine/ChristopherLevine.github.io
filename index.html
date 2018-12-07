@@ -5,27 +5,9 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="icon" href="favicon.ico">
-        <link href="css/jquery.bxslider.css" rel="stylesheet">
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/jquery.bxSlider.min.js"></script>
+        <script src="js/jquery-3.1.1.min.js"></script
 		<script src="js/jquery.validate.min.js"></script>
 		<script src="js/main.js"></script>
-        <script>
-    	$(document).ready(function() {
-        	$("#slider").bxSlider({
-			  auto: true,
-              captions: false,
-			  minSlides: 1,
-			  maxSlides: 1,
-			  slideWidth: 500,
-			  slideMargin: 0,
-              ticker: true,
-              responsive: true,
-              randomStart:true
-              
-			});
-    	});
-        </script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130617353-1"></script>
 		<script>
@@ -35,7 +17,6 @@
 
 			gtag('config', 'UA-130617353-1');
 		</script>
-
 	<title>Donut Delights</title>
     </head>
     <body>
@@ -50,13 +31,29 @@
 	</header>
 	<main>
        <p id="home">hi</p>
-	   <ul id="slider">
-           <li><img src="img/IMG_1117.jpg" alt="" width="550"></li>
-           <li><img src="img/donutsInCase2.jpg" alt="" width="500"></li>
-           <li><img src="img/storefront.jpg" alt="" width="500"></li>
-           <li><img src="img/IMG_9866.JPG" alt="" width="500" height="380"></li>
-           <li><img src="img/IMG_2822_v2.jpg" alt="" width="500"></li>
+	   <ul class="slideshow-container">
+           <li class="mySlides fade"><img src="img/IMG_1117.jpg" alt="" width="550" height="380"></li>
+           <li class="mySlides fade"><img src="img/donutsInCase2.jpg" alt="" width="550" height="380"></li>
+           <li class="mySlides fade"><img src="img/storefront.jpg" alt="" width="550" height="380"></li>
+           <li class="mySlides fade"><img src="img/IMG_9866.JPG" alt="" width="550" height="380"></li>
+           <li class="mySlides fade"><img src="img/IMG_2822_v2.jpg" alt="" width="550" height="380"></li>
         </ul>
+		<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none"; 
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1} 
+			slides[slideIndex-1].style.display = "block"; 
+			setTimeout(showSlides, 2000); // Change image every 2 seconds
+			}
+		</script>
 		<p id="hours">Open from 6 A.M. to 8 P.M. every day</p>
         <img src="img/donutVanGogh.jpg" alt="painting"/>
         <p>Donuts have been around for many years and even Van Gogh saw the beauty that they possess</p>
